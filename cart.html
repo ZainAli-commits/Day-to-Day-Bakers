@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ================= SEO META TAGS ================= -->
+<title>Your Cart | Day to Day Bakers — Gujar Khan</title>
+
+<meta name="description"
+content="Review your food order cart at Day to Day Bakers. Confirm your pizza, burgers, bakery items and send your order instantly through WhatsApp.">
+
+<meta name="keywords"
+content="Day to Day Bakers cart, food order cart, pizza order Gujar Khan, online bakery order Mandra">
+
+<meta name="author" content="Day to Day Bakers">
+<meta name="robots" content="index, follow">
+
+<!-- ================= OPEN GRAPH ================= -->
+<meta property="og:title"
+content="Your Cart | Day to Day Bakers">
+
+<meta property="og:description"
+content="Review your order and confirm instantly through WhatsApp at Day to Day Bakers.">
+
+<meta property="og:image"
+content="https://zainali-commits.github.io/Day-to-Day-Bakers/cartbanner.webp">
+
+<meta property="og:url"
+content="https://zainali-commits.github.io/Day-to-Day-Bakers/cart.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Day to Day Bakers">
+
+<!-- ================= TWITTER CARD ================= -->
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title"
+content="Your Cart | Day to Day Bakers">
+
+<meta name="twitter:description"
+content="Confirm your order quickly via WhatsApp.">
+
+<meta name="twitter:image"
+content="https://zainali-commits.github.io/Day-to-Day-Bakers/cartbanner.webp">
+
+<!-- ================= CANONICAL ================= -->
+<link rel="canonical"
+href="https://zainali-commits.github.io/Day-to-Day-Bakers/cart.html">
+
+<!-- ================= PERFORMANCE ================= -->
+<link rel="preload"
+as="image"
+href="cartbanner.webp">
+
+<!-- ================= FONTS ================= -->
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+rel="stylesheet">
+
+<!-- ================= CSS ================= -->
+<link rel="stylesheet" href="cart.css">
+
+<!-- ================= SCHEMA ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+
+  "name": "Day to Day Bakers",
+
+  "url": "https://zainali-commits.github.io/Day-to-Day-Bakers/",
+
+  "telephone": "+923495407325",
+
+  "servesCuisine": [
+    "Pizza",
+    "Fast Food",
+    "Bakery"
+  ],
+
+  "priceRange": "$$",
+
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mandra",
+    "addressRegion": "Gujar Khan",
+    "addressCountry": "PK"
+  },
+
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "10:00",
+      "closes": "00:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "10:00",
+      "closes": "01:00"
+    }
+  ],
+
+  "sameAs": [
+    "https://www.facebook.com/share/18PcV4hFdJ/",
+    "https://www.instagram.com/chzainali5766",
+    "https://www.linkedin.com/in/zain-ali-2844443b0"
+  ],
+
+  "acceptsReservations": "True",
+
+  "hasMap": "https://maps.google.com/?q=Mandra,Gujar+Khan"
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="head">
+
+  <h1 class="logo-text" onclick="location.href='index.html'">
+    <span class="logo-icon">🍕</span>
+    Day to Day <span class="logo-gold">Bakers</span>
+  </h1>
+
+  <nav class="nav-links"
+    id="navLinks"
+    aria-label="Main Navigation">
+
+    <button onclick="location.href='index.html'">Home</button>
+    <button onclick="location.href='Menu.html'">Menu</button>
+    <button onclick="location.href='About.html'">About</button>
+    <button onclick="location.href='Reservation.html'">Reservation</button>
+    <button onclick="location.href='Contact.html'">Contact</button>
+  </nav>
+
+  <div class="nav-right">
+
+    <button class="cart-btn"
+      aria-label="View Cart"
+      onclick="location.href='cart.html'">
+
+      🛒<span class="cart-count" id="cart-count">0</span>
+    </button>
+
+    <button class="hamburger"
+      id="hamburger"
+      aria-label="Open Menu">
+
+      ☰
+    </button>
+
+  </div>
+
+</header>
+
+<!-- ================= PAGE TITLE ================= -->
+<div class="page-title" role="banner">
+
+  <h1>Your Cart 🛒</h1>
+  <div class="title-line"></div>
+
+</div>
+
+<!-- ================= CART SECTION ================= -->
+<div class="cart-section" id="cartSection">
+  <!-- Rendered by JS -->
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer-card">
+
+  <div class="footer-overlay"></div>
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+
+      <div class="footer-logo">
+
+        <p style="font-family:'Playfair Display',serif;font-size:22px;color:#ffd27f;margin-bottom:4px;">
+          Day to Day Bakers
+        </p>
+
+        <p style="font-size:12px;color:#ccc;margin-bottom:14px;">
+          Taste the Tradition
+        </p>
+
+      </div>
+
+      <div class="footer-hours">
+
+        <h2>Opening Hours</h2>
+
+        <p>Mon-Fri: 10:00 AM - 12:00 AM</p>
+        <p>Sat-Sun: 10:00 AM - 01:00 AM</p>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-links">
+
+      <h2>Quick Links</h2>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Reservation.html">Reservation</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <!-- CONTACT -->
+  <div class="footer-contact-center">
+
+    <h2>Contact Us</h2>
+
+    <p>📞 +92 349 5407325</p>
+    <p>📍 Tehsil Gujar Khan, City Mandra, Village Rakhmore</p>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <p>© 2026 All Rights Reserved | Designed by Zain</p>
+
+  </div>
+
+</footer>
+
+<!-- ================= WHATSAPP FLOAT ================= -->
+<a class="whatsapp-float"
+href="https://wa.me/923495407325"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Chat with Day to Day Bakers on WhatsApp"
+title="Chat with us on WhatsApp">
+
+💬
+</a>
+
+<script>
+
+  // ================= HAMBURGER =================
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // ================= CART LOGIC =================
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  function saveCart() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }
+
+  function updateCartCount() {
+    let total = 0;
+
+    cart.forEach(item => total += item.quantity);
+
+    document.getElementById("cart-count").innerText = total;
+  }
+
+  function renderCart() {
+
+    const section = document.getElementById("cartSection");
+
+    section.innerHTML = "";
+
+    updateCartCount();
+
+    // EMPTY CART
+    if (cart.length === 0) {
+
+      section.innerHTML = `
+        <div class="empty-cart">
+
+          <div class="empty-icon">🛒</div>
+
+          <h2>Your cart is empty!</h2>
+
+          <p>
+            Looks like you haven't added anything yet.
+          </p>
+
+          <button onclick="location.href='Menu.html'">
+            Browse Menu
+          </button>
+
+        </div>
+      `;
+
+      return;
+    }
+
+    // LEFT PANEL
+    const itemsPanel = document.createElement('div');
+
+    itemsPanel.className = 'cart-items-panel';
+
+    itemsPanel.innerHTML =
+      `<h2>Your Items (${cart.length})</h2>`;
+
+    let subtotal = 0;
+
+    cart.forEach((item, index) => {
+
+      const price =
+        parseInt(item.price.toString().replace(/[^0-9]/g, ""));
+
+      const itemTotal = price * item.quantity;
+
+      subtotal += itemTotal;
+
+      const div = document.createElement('div');
+
+      div.className = 'cart-item';
+
+      div.innerHTML = `
+
+        <img src="${item.img}"
+        loading="lazy"
+        decoding="async"
+        alt="${item.name}"
+        onerror="this.src='unnamed.webp'">
+
+        <div class="cart-item-info">
+
+          <h3>${item.name}</h3>
+
+          <div class="item-price">
+            Rs: ${price} each
+          </div>
+
+        </div>
+
+        <div class="qty-controls">
+
+          <button class="qty-btn"
+          onclick="changeQty(${index}, -1)">
+          −
+          </button>
+
+          <span class="qty-number">
+            ${item.quantity}
+          </span>
+
+          <button class="qty-btn"
+          onclick="changeQty(${index}, 1)">
+          +
+          </button>
+
+        </div>
+
+        <div class="item-total">
+          Rs: ${itemTotal}
+        </div>
+
+        <button class="remove-btn"
+        onclick="removeItem(${index})"
+        title="Remove Item">
+
+        🗑️
+        </button>
+
+      `;
+
+      itemsPanel.appendChild(div);
+
+    });
+
+    // SUMMARY
+    const delivery = 50;
+    const total = subtotal + delivery;
+
+    const summaryPanel = document.createElement('div');
+
+    summaryPanel.className = 'summary-panel';
+
+    summaryPanel.innerHTML = `
+
+      <h2>Order Summary</h2>
+
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span>Rs: ${subtotal}</span>
+      </div>
+
+      <div class="summary-row">
+        <span>Delivery Fee</span>
+        <span>Rs: ${delivery}</span>
+      </div>
+
+      <div class="summary-row total">
+        <span>Total</span>
+        <span>Rs: ${total}</span>
+      </div>
+
+      <div class="customer-details">
+
+        <h4>📋 Your Details</h4>
+
+        <input class="detail-input"
+        type="text"
+        id="custName"
+        placeholder="Your Full Name *">
+
+        <input class="detail-input"
+        type="tel"
+        id="custPhone"
+        placeholder="Your Phone Number *">
+
+        <input class="detail-input"
+        type="text"
+        id="custAddress"
+        placeholder="Delivery Address *">
+
+        <input class="detail-input"
+        type="text"
+        id="custNotes"
+        placeholder="Special notes (optional)">
+
+      </div>
+
+      <button class="confirm-btn"
+      onclick="confirmOrder()">
+
+      💬 Confirm Order via WhatsApp
+      </button>
+
+      <p class="wa-note">
+
+        WhatsApp will open with your order details.
+        Just press <span>Send!</span> 📲
+
+      </p>
+
+      <button class="continue-btn"
+      onclick="location.href='Menu.html'">
+
+      ← Continue Shopping
+      </button>
+
+      <button class="clear-btn"
+      onclick="clearCart()">
+
+      🗑️ Clear Cart
+      </button>
+
+    `;
+
+    section.appendChild(itemsPanel);
+    section.appendChild(summaryPanel);
+
+  }
+
+  // ================= CHANGE QTY =================
+  function changeQty(index, delta) {
+
+    cart[index].quantity += delta;
+
+    if (cart[index].quantity <= 0) {
+      cart.splice(index, 1);
+    }
+
+    saveCart();
+    renderCart();
+
+  }
+
+  // ================= REMOVE ITEM =================
+  function removeItem(index) {
+
+    cart.splice(index, 1);
+
+    saveCart();
+    renderCart();
+
+  }
+
+  // ================= CLEAR CART =================
+  function clearCart() {
+
+    if (confirm("Are you sure you want to clear your cart?")) {
+
+      cart = [];
+
+      saveCart();
+
+      renderCart();
+    }
+  }
+
+  // ================= CONFIRM ORDER =================
+  function confirmOrder() {
+
+    const name =
+      document.getElementById('custName').value.trim();
+
+    const phone =
+      document.getElementById('custPhone').value.trim();
+
+    const address =
+      document.getElementById('custAddress').value.trim();
+
+    const notes =
+      document.getElementById('custNotes').value.trim();
+
+    if (!name || !phone || !address) {
+
+      alert(
+        '⚠️ Please fill in your Name, Phone, and Address before confirming.'
+      );
+
+      return;
+    }
+
+    let itemsList = '';
+    let subtotal = 0;
+
+    cart.forEach(item => {
+
+      const price =
+        parseInt(item.price.toString().replace(/[^0-9]/g, ""));
+
+      const itemTotal = price * item.quantity;
+
+      subtotal += itemTotal;
+
+      itemsList +=
+        `  • ${item.name} x${item.quantity} — Rs: ${itemTotal}\n`;
+
+    });
+
+    const delivery = 50;
+    const total = subtotal + delivery;
+
+    const message =
+
+`🛒 *New Order from Website!*
+━━━━━━━━━━━━━━━━━
+👤 *Name:* ${name}
+📱 *Phone:* ${phone}
+📍 *Address:* ${address}
+━━━━━━━━━━━━━━━━━
+🍕 *Order Items:*
+${itemsList}
+━━━━━━━━━━━━━━━━━
+💰 *Subtotal:* Rs: ${subtotal}
+🛵 *Delivery Fee:* Rs: ${delivery}
+💵 *Total:* Rs: ${total}
+━━━━━━━━━━━━━━━━━
+📝 *Notes:* ${notes || 'None'}
+━━━━━━━━━━━━━━━━━
+_Sent from Day to Day Bakers Website_ 🍕`;
+
+    const whatsappNumber = '923495407325';
+
+    const encodedMessage =
+      encodeURIComponent(message);
+
+    window.open(
+      `https://wa.me/${whatsappNumber}?text=${encodedMessage}`,
+      '_blank'
+    );
+
+    // CLEAR CART AFTER ORDER
+    cart = [];
+
+    saveCart();
+
+    renderCart();
+
+  }
+
+  // ================= LOAD =================
+  renderCart();
+
+</script>
+
+</body>
+</html>

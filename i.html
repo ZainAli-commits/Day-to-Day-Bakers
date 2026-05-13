@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ================= SEO META TAGS ================= -->
+<title>Day to Day Bakers | Best Pizza in Gujar Khan</title>
+<meta name="description" content="Day to Day Bakers — Best pizza in Gujar Khan. BBQ Chicken, Pepperoni, Crown Crust and more. Fresh ingredients, expert chefs, fast delivery. Order now!">
+<meta name="keywords" content="pizza, Gujar Khan, Day to Day Bakers, BBQ chicken pizza, pepperoni pizza, crown crust, fast delivery, restaurant, Mandra">
+<meta name="author" content="Day to Day Bakers">
+<meta name="robots" content="index, follow">
+
+<!-- ================= OPEN GRAPH (WhatsApp & Social Sharing) ================= -->
+<meta property="og:title" content="Day to Day Bakers | Best Pizza in Gujar Khan">
+<meta property="og:description" content="Best pizza in Gujar Khan. Fresh ingredients, expert chefs, fast delivery. Order now or book a table!">
+<meta property="og:image" content="https://zainali-commits.github.io/Day-to-Day-Bakers/crown.png">
+<meta property="og:url" content="https://zainali-commits.github.io/Day-to-Day-Bakers/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Day to Day Bakers">
+
+<!-- ================= TWITTER CARD ================= -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Day to Day Bakers | Best Pizza in Gujar Khan">
+<meta name="twitter:description" content="Fresh ingredients, expert chefs, fast delivery. Best pizza in Gujar Khan!">
+<meta name="twitter:image" content="https://zainali-commits.github.io/Day-to-Day-Bakers/crown.png">
+
+<!-- ================= PERFORMANCE: Preload hero image ================= -->
+<link rel="preload" as="image" href="slider1.webp">
+
+<!-- ================= FONTS ================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="index.css">
+
+<!-- ================= SCHEMA (Google Rich Results) ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Day to Day Bakers",
+  "description": "Best pizza in Gujar Khan with fresh ingredients and fast delivery.",
+  "url": "https://zainali-commits.github.io/Day-to-Day-Bakers/",
+  "telephone": "+923495407325",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mandra",
+    "addressRegion": "Gujar Khan",
+    "addressCountry": "PK"
+  },
+  "openingHours": ["Mo-Fr 10:00-00:00", "Sa-Su 10:00-01:00"],
+  "servesCuisine": "Pizza",
+  "priceRange": "Rs 500+"
+}
+</script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="head">
+  <h1 class="logo-text"><span class="logo-icon">🍕</span> Day to Day <span class="logo-gold">Bakers</span></h1>
+  <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+    <button onclick="location.href='index.html'">Home</button>
+    <button onclick="location.href='Menu.html'">Menu</button>
+    <button onclick="location.href='About.html'">About</button>
+    <button onclick="location.href='Reservation.html'">Reservation</button>
+    <button onclick="location.href='Contact.html'">Contact</button>
+  </nav>
+  <div class="nav-right">
+    <button class="cart-btn" aria-label="View Cart" onclick="location.href='cart.html'">🛒<span class="cart-count" id="cart-count">0</span></button>
+    <button class="hamburger" aria-label="Open Menu" id="hamburger">☰</button>
+  </div>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<div class="hero" role="banner">
+  <div class="hero-slider">
+    <div class="slide active" style="background-image: url('slider1.webp');"></div>
+    <div class="slide" style="background-image: url('slider2.webp');"></div>
+    <div class="slide" style="background-image: url('slider3.webp');"></div>
+  </div>
+  <div class="hero-content">
+    <h4>Welcome to Day to Day Bakers</h4>
+    <h1>Taste the Tradition</h1>
+    <div class="hero-btns">
+      <button class="btn-view-menu" onclick="location.href='Menu.html'">View Menu</button>
+      <button class="btn-book-table" onclick="location.href='Reservation.html'">Book A Table</button>
+    </div>
+  </div>
+  <div class="scroll-down" aria-label="Scroll down" onclick="document.querySelector('.Chef-cards').scrollIntoView({behavior:'smooth'})">↓</div>
+</div>
+
+<!-- ================= CHEF CARDS ================= -->
+<section class="Chef-cards fade-in" aria-label="Chef's Special Menu">
+  <div class="section-title">
+    <h2>Our Chef's Special</h2>
+    <div class="title-line"></div>
+  </div>
+  <div class="chef-slider">
+    <div class="cards" data-name="BBQ Chicken Pizza" data-price="500" data-img="chiken.png">
+      <img src="chiken.webp" alt="BBQ Chicken Pizza — smoky grilled chicken with mozzarella" loading="lazy" width="280" height="200">
+      <h3>BBQ Chicken Pizza</h3>
+      <div class="card-price">Rs: 500</div>
+      <p>Smoky grilled chicken, rich BBQ sauce, and melted mozzarella on a crispy crust.</p>
+      <button class="order-btn" onclick="addToCart(this)" aria-label="Add BBQ Chicken Pizza to cart">Add to Cart 🛒</button>
+      <span class="cart-msg" aria-live="polite"></span>
+    </div>
+    <div class="cards" data-name="Pepperoni Pizza" data-price="500" data-img="peporini.png">
+      <img src="peporini.webp" alt="Pepperoni Pizza — crispy crust with spicy pepperoni" loading="lazy" width="280" height="200">
+      <h3>Pepperoni Pizza</h3>
+      <div class="card-price">Rs: 500</div>
+      <p>Crispy golden crust topped with rich tomato sauce and bold spicy pepperoni.</p>
+      <button class="order-btn" onclick="addToCart(this)" aria-label="Add Pepperoni Pizza to cart">Add to Cart 🛒</button>
+      <span class="cart-msg" aria-live="polite"></span>
+    </div>
+    <div class="cards" data-name="Crown Crust Pizza" data-price="500" data-img="crown.png">
+      <img src="crown.webp" alt="Crown Crust Pizza — cheese-stuffed crown shaped crust" loading="lazy" width="280" height="200">
+      <h3>Crown Crust Pizza</h3>
+      <div class="card-price">Rs: 500</div>
+      <p>A royal crown crust stuffed with creamy cheese and loaded with premium toppings.</p>
+      <button class="order-btn" onclick="addToCart(this)" aria-label="Add Crown Crust Pizza to cart">Add to Cart 🛒</button>
+      <span class="cart-msg" aria-live="polite"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VIDEO SECTION ================= -->
+<section class="video-section fade-in" aria-label="Restaurant Video">
+  <div class="section-title">
+    <h2>Watch Us in Action</h2>
+    <div class="title-line"></div>
+    <p class="section-subtitle">See how we craft every pizza with passion and perfection</p>
+  </div>
+  <div class="video-single-wrap">
+    <div class="video-wrapper" id="mainVideoWrapper">
+      <video id="mainVideo" poster="crown.png" controls preload="none" aria-label="Day to Day Bakers restaurant video">
+        <source src="video (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-play-overlay" id="playOverlay" onclick="playMainVideo()" role="button" aria-label="Play video">
+        <div class="play-btn-circle">▶</div>
+        <p class="video-overlay-text">Watch Our Story</p>
+      </div>
+    </div>
+    <div class="video-main-info">
+      <span class="video-tag">🎬 Featured</span>
+      <h3>A Taste of Our World</h3>
+      <p>Watch our chefs at work, explore our creative dishes, and get a feel for the passion behind every plate we serve.</p>
+    </div>
+  </div>
+  <div class="video-cta-banner">
+    <div class="video-cta-text">
+      <span aria-hidden="true">🎥</span>
+      <p>Want to see more? Follow us on social media for daily kitchen videos!</p>
+    </div>
+    <a href="https://wa.me/923495407325" target="_blank" rel="noopener noreferrer" class="order-btn" aria-label="Order now via WhatsApp">Order Now via WhatsApp</a>
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="choose-section fade-in" id="choose" aria-label="Why Choose Us">
+  <div class="section-title">
+    <h2>Why Choose Us</h2>
+    <div class="title-line"></div>
+  </div>
+  <div class="choose-container">
+    <div class="choose-card">
+      <img src="fresh.webp" alt="Fresh Ingredients" loading="lazy" onerror="this.style.display='none'">
+      <div class="choose-info">
+        <h3>🌿 Fresh Ingredients</h3>
+        <p>We use fresh and premium quality ingredients every single day.</p>
+        <a href="detail.html?type=fresh" class="order-btn">Learn More</a>
+      </div>
+    </div>
+    <div class="choose-card">
+      <img src="chef.webp" alt="Expert Chefs at Day to Day Bakers" loading="lazy" onerror="this.style.display='none'">
+      <div class="choose-info">
+        <h3>👨‍🍳 Expert Chefs</h3>
+        <p>Our chefs cook every meal with great skill and pure perfection.</p>
+        <a href="detail.html?type=chef" class="order-btn">Learn More</a>
+      </div>
+    </div>
+    <div class="choose-card">
+      <img src="fast1.webp" alt="Fast Pizza Delivery in Gujar Khan" loading="lazy" onerror="this.style.display='none'">
+      <div class="choose-info">
+        <h3>⚡ Fast Delivery</h3>
+        <p>We deliver hot and fresh pizza quickly right to your door.</p>
+        <a href="detail.html?type=delivery" class="order-btn">Learn More</a>
+      </div>
+    </div>
+    <div class="choose-card">
+      <img src="quality.webp" alt="Best Quality Pizza" loading="lazy" onerror="this.style.display='none'">
+      <div class="choose-info">
+        <h3>⭐ Best Quality</h3>
+        <p>We promise premium taste and full customer satisfaction always.</p>
+        <a href="detail.html?type=quality" class="order-btn">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT US ================= -->
+<section class="choose-About fade-in" aria-label="About Day to Day Bakers">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="unnamed.webp" alt="Inside Day to Day Bakers restaurant" loading="lazy">
+    </div>
+    <div class="about-content">
+      <h2>About Us</h2>
+      <h1>Experience Fine Dining</h1>
+      <p>
+        Welcome to Day to Day Bakers, where flavor meets passion. Founded by Khizar Hayat,
+        we craft every dish using the finest ingredients and a touch of creativity to deliver
+        an unforgettable dining experience. From sizzling pizzas to signature specialties,
+        our mission is to serve quality, freshness, and taste in every bite.
+      </p>
+      <button class="order-btn" onclick="location.href='About.html'">Read More</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CUSTOMER TESTIMONIALS ================= -->
+<section class="testi-section fade-in" aria-label="Customer Reviews">
+  <div class="section-title">
+    <h2>What Our Customers Say</h2>
+    <div class="title-line"></div>
+  </div>
+  <div class="testi-container">
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"The BBQ Chicken Pizza is absolutely incredible. Best pizza in Gujar Khan by far!"</p>
+        <div class="reviewer">
+          <div class="avatar" aria-hidden="true">AK</div>
+          <div><div class="rev-name">Ahmed Khan</div><div class="rev-meta">Regular Customer</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"Fast delivery, hot pizza, friendly staff. Day to Day Bakers never disappoints!"</p>
+        <div class="reviewer">
+          <div class="avatar" aria-hidden="true">SA</div>
+          <div><div class="rev-name">Sara Ali</div><div class="rev-meta">Verified Order</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"Crown Crust is a game changer. The cheese-filled crust is unbelievably good!"</p>
+        <div class="reviewer">
+          <div class="avatar" aria-hidden="true">UB</div>
+          <div><div class="rev-name">Usman Butt</div><div class="rev-meta">Food Blogger</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"The BBQ Chicken Pizza is absolutely incredible. Best pizza in Gujar Khan by far!"</p>
+        <div class="reviewer">
+          <div class="avatar" aria-hidden="true">AK</div>
+          <div><div class="rev-name">Ahmed Khan</div><div class="rev-meta">Regular Customer</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"Fast delivery, hot pizza, friendly staff. Day to Day Bakers never disappoints!"</p>
+        <div class="reviewer">
+          <div class="avatar" aria-hidden="true">SA</div>
+          <div><div class="rev-name">Sara Ali</div><div class="rev-meta">Verified Order</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"Crown Crust is a game changer. The cheese-filled crust is unbelievably good!"</p>
+        <div class="reviewer">
+          <div class="avatar" aria-hidden="true">UB</div>
+          <div><div class="rev-name">Usman Butt</div><div class="rev-meta">Food Blogger</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+<a class="whatsapp-float" href="https://wa.me/923495407325" target="_blank" rel="noopener noreferrer" aria-label="Chat with Day to Day Bakers on WhatsApp">💬</a>
+
+<footer class="footer-card" role="contentinfo">
+  <div class="footer-overlay"></div>
+  <div class="footer-container">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <p style="font-family:'Playfair Display',serif;font-size:24px;color:#ffd27f;margin-bottom:4px;">Day to Day Bakers</p>
+        <p style="font-size:13px;color:#ccc;margin-bottom:20px;">Taste the Tradition</p>
+      </div>
+      <div class="footer-hours">
+        <h2>Opening Hours</h2>
+        <p>Mon-Fri: 10:00 AM - 12:00 AM</p>
+        <p>Sat-Sun: 10:00 AM - 01:00 AM</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Reservation.html">Reservation</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-contact-center">
+    <h2>Contact Us</h2>
+    <p>📞 +92 349 5407325</p>
+    <p>📍 Tehsil Gujar Khan, City Mandra, Village Rakhmore</p>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 All Rights Reserved | Designed by Zain</p>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('active'));
+
+  document.addEventListener("DOMContentLoaded", function () { updateCartCount(); });
+
+  function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let total = 0;
+    cart.forEach(item => total += item.quantity);
+    document.getElementById("cart-count").innerText = total;
+  }
+
+  const testiGrid = document.querySelector('.testi-grid');
+  let scrollAmount = 0;
+  function autoSlideTestimonials() {
+    if (window.innerWidth <= 768) {
+      const cardWidth = document.querySelector('.testi-card').offsetWidth + 14;
+      scrollAmount += cardWidth;
+      if (scrollAmount >= testiGrid.scrollWidth - testiGrid.clientWidth) scrollAmount = 0;
+      testiGrid.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+    }
+  }
+  setInterval(autoSlideTestimonials, 3000);
+
+  function addToCart(btn) {
+    const card = btn.closest('.cards');
+    const name  = card.dataset.name;
+    const price = parseInt(card.dataset.price);
+    const img   = card.dataset.img;
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existing = cart.find(item => item.name === name);
+    if (existing) { existing.quantity += 1; } else { cart.push({ name, price, img, quantity: 1 }); }
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCount();
+    const msg = card.querySelector('.cart-msg');
+    if (msg) { msg.innerText = "Added successfully ✅"; setTimeout(() => { msg.innerText = ""; }, 1500); }
+  }
+
+  const faders = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0.15 });
+  faders.forEach(el => observer.observe(el));
+
+  let slides = document.querySelectorAll(".slide");
+  let index = 0;
+  function showSlide() {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+    index = (index + 1) % slides.length;
+  }
+  setInterval(showSlide, 3000);
+
+  function playMainVideo() {
+    const video = document.getElementById('mainVideo');
+    const overlay = document.getElementById('playOverlay');
+    if (video) { overlay.style.opacity = '0'; overlay.style.pointerEvents = 'none'; video.play(); }
+  }
+</script>
+
+</body>
+</html>

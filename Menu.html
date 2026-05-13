@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ================= SEO META TAGS ================= -->
+<title>Menu | Day to Day Bakers — Pizza, Burgers, Drinks & More</title>
+<meta name="description" content="Explore the full menu at Day to Day Bakers. BBQ Chicken Pizza, Pepperoni, Crown Crust, Burgers, Shawarma, Fries and refreshing drinks. Order now in Gujar Khan!">
+<meta name="keywords" content="pizza menu Gujar Khan, BBQ chicken pizza, pepperoni pizza, burgers, shawarma, fries, drinks, Day to Day Bakers menu">
+<meta name="author" content="Day to Day Bakers">
+<meta name="robots" content="index, follow">
+
+<!-- ================= OPEN GRAPH ================= -->
+<meta property="og:title" content="Menu | Day to Day Bakers — Pizza, Burgers, Drinks & More">
+<meta property="og:description" content="Explore our full menu — pizzas, burgers, shawarma, fries and drinks. Fresh, delicious and fast delivery in Gujar Khan!">
+<meta property="og:image" content="https://zainali-commits.github.io/Day-to-Day-Bakers/crown.webp">
+<meta property="og:url" content="https://zainali-commits.github.io/Day-to-Day-Bakers/Menu.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Day to Day Bakers">
+
+<!-- ================= TWITTER CARD ================= -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Menu | Day to Day Bakers">
+<meta name="twitter:description" content="Pizza, Burgers, Drinks & More. Order now in Gujar Khan!">
+<meta name="twitter:image" content="https://zainali-commits.github.io/Day-to-Day-Bakers/crown.webp">
+
+<!-- ================= PERFORMANCE: Preload hero image ================= -->
+<link rel="preload" as="image" href="menuslider.webp">
+
+<!-- ================= FONTS ================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="menu.css">
+
+<!-- ================= SCHEMA ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Menu",
+  "name": "Day to Day Bakers Menu",
+  "description": "Full food menu including pizzas, burgers, drinks and more.",
+  "url": "https://zainali-commits.github.io/Day-to-Day-Bakers/Menu.html",
+  "hasMenuSection": [
+    { "@type": "MenuSection", "name": "Pizzas" },
+    { "@type": "MenuSection", "name": "Burgers" },
+    { "@type": "MenuSection", "name": "Drinks" },
+    { "@type": "MenuSection", "name": "Others" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="hero" role="banner">
+  <header class="head">
+    <h1 class="logo-text"><span class="logo-icon">🍕</span> Day to Day <span class="logo-gold">Bakers</span></h1>
+    <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='Menu.html'">Menu</button>
+      <button onclick="location.href='About.html'">About</button>
+      <button onclick="location.href='Reservation.html'">Reservation</button>
+      <button onclick="location.href='Contact.html'">Contact</button>
+    </nav>
+    <div class="nav-right">
+      <button class="cart-btn" aria-label="View Cart" onclick="location.href='cart.html'">🛒<span class="cart-count" id="cart-count">0</span></button>
+      <button class="hamburger" aria-label="Open Menu" id="hamburger">☰</button>
+    </div>
+  </header>
+
+  <div class="hero-text">
+    <h1>Our Menu</h1>
+    <p>Delicious choices made fresh for you</p>
+  </div>
+</div>
+
+<section class="menu-section" aria-label="Full Menu">
+  <div class="section-title fade-up">
+    <h2>Explore Our Menu</h2>
+    <div class="title-line"></div>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-bar" role="search">
+    <span class="search-icon" aria-hidden="true">🔍</span>
+    <input type="text" id="menuSearch" placeholder="Search for pizza, burger, drinks..." aria-label="Search menu items">
+  </div>
+
+  <div class="menu-categories fade-up" role="tablist" aria-label="Menu Categories">
+    <button class="active" role="tab" aria-selected="true" onclick="filterMenu('all', event)">All</button>
+    <button role="tab" aria-selected="false" onclick="filterMenu('Pizza', event)">Pizza's</button>
+    <button role="tab" aria-selected="false" onclick="filterMenu('Burgers', event)">Burgers</button>
+    <button role="tab" aria-selected="false" onclick="filterMenu('drinks', event)">Drinks</button>
+    <button role="tab" aria-selected="false" onclick="filterMenu('others', event)">Others</button>
+  </div>
+
+  <div class="menu-cards">
+
+    <!-- ===== PIZZAS ===== -->
+    <div class="menu-card" data-category="Pizza" data-sizes='["Small","Medium","Large","E.Large"]' data-prices='[500,1000,1500,2000]'>
+      <img src="chiken.webp" alt="BBQ Chicken Pizza with smoky grilled chicken and mozzarella" loading="lazy" width="280" height="180">
+      <h3>BBQ Chicken Pizza</h3>
+      <p>Smoky grilled chicken, rich BBQ sauce, and melted mozzarella.</p>
+      <span class="price">Rs: 500</span>
+      <div class="size-selector"></div>
+      <button class="order-btn" aria-label="Add BBQ Chicken Pizza to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="Pizza" data-sizes='["Small","Medium","Large","E.Large"]' data-prices='[500,1000,1500,2000]'>
+      <img src="peporini.webp" alt="Pepperoni Pizza with spicy pepperoni slices" loading="lazy" width="280" height="180">
+      <h3>Pepperoni Pizza</h3>
+      <p>Crispy golden crust topped with rich tomato sauce and pepperoni slices.</p>
+      <span class="price">Rs: 500</span>
+      <div class="size-selector"></div>
+      <button class="order-btn" aria-label="Add Pepperoni Pizza to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="Pizza" data-sizes='["Small","Medium","Large","E.Large"]' data-prices='[500,1000,1500,2000]'>
+      <img src="fajita.webp" alt="Chicken Fajita Pizza" loading="lazy" width="280" height="180">
+      <h3>Chicken Fajita</h3>
+      <p>Crispy golden crust topped with rich tomato sauce and fajita chicken.</p>
+      <span class="price">Rs: 500</span>
+      <div class="size-selector"></div>
+      <button class="order-btn" aria-label="Add Chicken Fajita to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="Pizza" data-sizes='["Small","Medium","Large","E.Large"]' data-prices='[500,1000,1500,2000]'>
+      <img src="chiken.webp" alt="Chicken Tikka Pizza" loading="lazy" width="280" height="180">
+      <h3>Chicken Tikka</h3>
+      <p>Crispy golden crust topped with rich tomato sauce and chicken tikka.</p>
+      <span class="price">Rs: 500</span>
+      <div class="size-selector"></div>
+      <button class="order-btn" aria-label="Add Chicken Tikka to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="Pizza" data-sizes='["Small","Medium","Large","E.Large"]' data-prices='[500,1000,1500,2000]'>
+      <img src="crown.webp" alt="Crown Crust Pizza with cheese-stuffed crust" loading="lazy" width="280" height="180">
+      <h3>Crown Crust Pizza</h3>
+      <p>A unique crown-shaped crust filled with creamy cheese and premium toppings.</p>
+      <span class="price">Rs: 500</span>
+      <div class="size-selector"></div>
+      <button class="order-btn" aria-label="Add Crown Crust Pizza to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <!-- ===== BURGERS ===== -->
+    <div class="menu-card" data-category="Burgers">
+      <img src="chiken patty.webp" alt="Chicken Patty Burger" loading="lazy" width="280" height="180">
+      <h3>Chicken Patty Burger</h3>
+      <p>A juicy chicken patty with creamy cheese and premium toppings.</p>
+      <span class="price">Rs: 500</span>
+      <button class="order-btn" aria-label="Add Chicken Patty Burger to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="Burgers">
+      <img src="veggie .webp" alt="Veggie Burger" loading="lazy" width="280" height="180">
+      <h3>Veggie Burger</h3>
+      <p>A fresh veggie patty with creamy cheese and premium toppings.</p>
+      <span class="price">Rs: 500</span>
+      <button class="order-btn" aria-label="Add Veggie Burger to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="Burgers">
+      <img src="classic beef burger.webp" alt="Classic Beef Burger" loading="lazy" width="280" height="180">
+      <h3>Classic Beef Burger</h3>
+      <p>A classic beef patty with creamy cheese and premium toppings.</p>
+      <span class="price">Rs: 500</span>
+      <button class="order-btn" aria-label="Add Classic Beef Burger to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="Burgers">
+      <img src="chiken burger.webp" alt="Spicy Chicken Burger" loading="lazy" width="280" height="180">
+      <h3>Spicy Chicken Burger</h3>
+      <p>A spicy chicken patty with creamy cheese and premium toppings.</p>
+      <span class="price">Rs: 500</span>
+      <button class="order-btn" aria-label="Add Spicy Chicken Burger to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="Burgers">
+      <img src="BBQ chiken burger.webp" alt="BBQ Chicken Burger" loading="lazy" width="280" height="180">
+      <h3>BBQ Chicken Burger</h3>
+      <p>A BBQ chicken patty with creamy cheese and premium toppings.</p>
+      <span class="price">Rs: 500</span>
+      <button class="order-btn" aria-label="Add BBQ Chicken Burger to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="Burgers">
+      <img src="BBQ burger.webp" alt="BBQ Beef Burger" loading="lazy" width="280" height="180">
+      <h3>BBQ Beef Burger</h3>
+      <p>A smoky BBQ beef patty with creamy cheese and premium toppings.</p>
+      <span class="price">Rs: 500</span>
+      <button class="order-btn" aria-label="Add BBQ Beef Burger to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <!-- ===== DRINKS ===== -->
+    <div class="menu-card" data-category="drinks" data-sizes='["250ml","500ml","1L"]' data-prices='[100,150,200]'>
+      <img src="coke.webp" alt="Coca-Cola cold drink" loading="lazy" width="280" height="180">
+      <h3>Coca-Cola Drink</h3>
+      <p>A refreshing chilled beverage with a fizzy sparkle.</p>
+      <span class="price">Rs: 100</span>
+      <div class="size-selector"></div>
+      <button class="order-btn" aria-label="Add Coca-Cola to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="drinks" data-sizes='["250ml","500ml","1L"]' data-prices='[100,150,200]'>
+      <img src="Mirinda .webp" alt="Mirinda orange drink" loading="lazy" width="280" height="180">
+      <h3>Mirinda Drink</h3>
+      <p>A vibrant orange-flavored soft drink with a tangy and refreshing taste.</p>
+      <span class="price">Rs: 100</span>
+      <div class="size-selector"></div>
+      <button class="order-btn" aria-label="Add Mirinda to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="drinks" data-sizes='["250ml","500ml","1L"]' data-prices='[100,150,200]'>
+      <img src="pepsi.webp" alt="Pepsi cold drink" loading="lazy" width="280" height="180">
+      <h3>Pepsi Drink</h3>
+      <p>A chilled carbonated beverage with a bold, sweet taste.</p>
+      <span class="price">Rs: 100</span>
+      <div class="size-selector"></div>
+      <button class="order-btn" aria-label="Add Pepsi to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="drinks" data-sizes='["250ml","500ml","1L"]' data-prices='[100,150,200]'>
+      <img src="drink dew.webp" alt="Mountain Dew citrus drink" loading="lazy" width="280" height="180">
+      <h3>Mountain Dew</h3>
+      <p>A citrus-flavored soft drink with an energizing kick.</p>
+      <span class="price">Rs: 100</span>
+      <div class="size-selector"></div>
+      <button class="order-btn" aria-label="Add Mountain Dew to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="drinks" data-sizes='["250ml","500ml","1L"]' data-prices='[100,150,200]'>
+      <img src="bid lyechee.webp" alt="Big Lychee flavored drink" loading="lazy" width="280" height="180">
+      <h3>Big Lychee Drink</h3>
+      <p>A sweet and refreshing lychee-flavored beverage.</p>
+      <span class="price">Rs: 100</span>
+      <div class="size-selector"></div>
+      <button class="order-btn" aria-label="Add Big Lychee to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="drinks" data-sizes='["250ml","500ml","1L"]' data-prices='[100,150,200]'>
+      <img src="big apple.webp" alt="Big Apple flavored drink" loading="lazy" width="280" height="180">
+      <h3>Big Apple Drink</h3>
+      <p>A crisp and refreshing apple-flavored beverage.</p>
+      <span class="price">Rs: 100</span>
+      <div class="size-selector"></div>
+      <button class="order-btn" aria-label="Add Big Apple to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="drinks" data-sizes='["250ml","500ml","1L"]' data-prices='[100,150,200]'>
+      <img src="sprite.webp" alt="Sprite lemon-lime soda" loading="lazy" width="280" height="180">
+      <h3>Sprite Drink</h3>
+      <p>A crisp lemon-lime soda with a clean, bubbly taste.</p>
+      <span class="price">Rs: 100</span>
+      <div class="size-selector"></div>
+      <button class="order-btn" aria-label="Add Sprite to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="drinks" data-sizes='["250ml","500ml","1L"]' data-prices='[100,150,200]'>
+      <img src="sting.webp" alt="Sting energy drink" loading="lazy" width="280" height="180">
+      <h3>Sting Energy Drink</h3>
+      <p>A bold energy drink with a sweet, tangy flavor and instant boost.</p>
+      <span class="price">Rs: 100</span>
+      <div class="size-selector"></div>
+      <button class="order-btn" aria-label="Add Sting to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <!-- ===== OTHERS ===== -->
+    <div class="menu-card" data-category="others">
+      <img src="Spicy chiken shwarma.webp" alt="Spicy Chicken Shawarma wrap" loading="lazy" width="280" height="180">
+      <h3>Spicy Chicken Shawarma</h3>
+      <p>Juicy grilled chicken wrapped in soft bread with spicy sauces and fresh veggies.</p>
+      <span class="price">Rs: 100</span>
+      <button class="order-btn" aria-label="Add Spicy Chicken Shawarma to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="others">
+      <img src="beef shwarma (1).webp" alt="Beef Shawarma wrap" loading="lazy" width="280" height="180">
+      <h3>Beef Shawarma</h3>
+      <p>Tender slices of seasoned beef wrapped in soft bread with fresh vegetables.</p>
+      <span class="price">Rs: 100</span>
+      <button class="order-btn" aria-label="Add Beef Shawarma to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="others">
+      <img src="chiken shwarma.webp" alt="Chicken Shawarma wrap" loading="lazy" width="280" height="180">
+      <h3>Chicken Shawarma</h3>
+      <p>Juicy marinated chicken wrapped in soft bread with creamy garlic sauce.</p>
+      <span class="price">Rs: 100</span>
+      <button class="order-btn" aria-label="Add Chicken Shawarma to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="others">
+      <img src="classic friee.webp" alt="Classic golden fries" loading="lazy" width="280" height="180">
+      <h3>Classic Fries</h3>
+      <p>Crispy golden potato fries lightly salted and perfectly fried.</p>
+      <span class="price">Rs: 100</span>
+      <button class="order-btn" aria-label="Add Classic Fries to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="others">
+      <img src="loaded cheese.webp" alt="Loaded Cheese Fries" loading="lazy" width="280" height="180">
+      <h3>Loaded Cheese Fries</h3>
+      <p>Crispy golden fries topped with rich melted cheese and creamy sauce.</p>
+      <span class="price">Rs: 100</span>
+      <button class="order-btn" aria-label="Add Loaded Cheese Fries to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+    <div class="menu-card" data-category="others">
+      <img src="spicy masala.webp" alt="Spicy Masala Fries" loading="lazy" width="280" height="180">
+      <h3>Spicy Masala Fries</h3>
+      <p>Crispy golden fries tossed in a bold mix of spicy masala seasoning.</p>
+      <span class="price">Rs: 100</span>
+      <button class="order-btn" aria-label="Add Spicy Masala Fries to cart">Add to Cart</button>
+      <span class="cart-message" aria-live="polite"></span>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer-card" role="contentinfo">
+  <div class="footer-overlay"></div>
+  <div class="footer-container">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <p style="font-family:'Playfair Display',serif;font-size:24px;color:#ffd27f;margin-bottom:4px;">Day to Day Bakers</p>
+        <p style="font-size:13px;color:#ccc;margin-bottom:20px;">Taste the Tradition</p>
+      </div>
+      <div class="footer-hours">
+        <h2>Opening Hours</h2>
+        <p>Mon-Fri: 10:00 AM - 12:00 AM</p>
+        <p>Sat-Sun: 10:00 AM - 01:00 AM</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Reservation.html">Reservation</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-contact-center">
+    <h2>Contact Us</h2>
+    <p>📞 +92 349 5407325</p>
+    <p>📍 Tehsil Gujar Khan, City Mandra, Village Rakhmore</p>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 All Rights Reserved | Designed by Zain</p>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/923495407325" target="_blank" rel="noopener noreferrer" aria-label="Chat with Day to Day Bakers on WhatsApp">💬</a>
+
+<script>
+  // ================= HAMBURGER =================
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('active'));
+
+  // ================= FILTER MENU =================
+  function filterMenu(category, event) {
+    document.querySelectorAll('.menu-card').forEach(card => {
+      card.style.display = (category === 'all' || card.dataset.category === category) ? 'flex' : 'none';
+    });
+    document.querySelectorAll('.menu-categories button').forEach(btn => {
+      btn.classList.remove('active');
+      btn.setAttribute('aria-selected', 'false');
+    });
+    if (event && event.target) {
+      event.target.classList.add('active');
+      event.target.setAttribute('aria-selected', 'true');
+    }
+  }
+
+  // ================= BUILD SIZE BUTTONS =================
+  function buildSizeSelectors() {
+    document.querySelectorAll('.menu-card').forEach(card => {
+      const sizesRaw = card.dataset.sizes;
+      const pricesRaw = card.dataset.prices;
+      const selectorDiv = card.querySelector('.size-selector');
+      if (!sizesRaw || !pricesRaw || !selectorDiv) return;
+      const sizes = JSON.parse(sizesRaw);
+      const prices = JSON.parse(pricesRaw);
+      const priceDisplay = card.querySelector('.price');
+      sizes.forEach((size, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'size-btn' + (i === 0 ? ' selected' : '');
+        btn.textContent = size;
+        btn.dataset.price = prices[i];
+        btn.setAttribute('aria-label', size + ' — Rs ' + prices[i]);
+        btn.addEventListener('click', function () {
+          selectorDiv.querySelectorAll('.size-btn').forEach(b => b.classList.remove('selected'));
+          this.classList.add('selected');
+          priceDisplay.textContent = 'Rs: ' + this.dataset.price;
+        });
+        selectorDiv.appendChild(btn);
+      });
+    });
+  }
+
+  // ================= CART =================
+  document.addEventListener("DOMContentLoaded", function () {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartCount = document.getElementById("cart-count");
+
+    function updateCartCount() {
+      let total = 0;
+      cart.forEach(item => total += item.quantity);
+      if (cartCount) cartCount.innerText = total;
+    }
+
+    updateCartCount();
+    buildSizeSelectors();
+
+    document.querySelectorAll(".order-btn").forEach(button => {
+      button.addEventListener("click", function () {
+        const card = this.closest(".menu-card");
+        const name = card.querySelector("h3").innerText;
+        const img = card.querySelector("img").src;
+        const selectedSizeBtn = card.querySelector(".size-btn.selected");
+        let price, size;
+        if (selectedSizeBtn) {
+          price = parseInt(selectedSizeBtn.dataset.price);
+          size = selectedSizeBtn.textContent;
+        } else {
+          const priceText = card.querySelector(".price").innerText;
+          price = parseInt(priceText.replace(/[^0-9]/g, ""));
+          size = null;
+        }
+        const cartKey = size ? name + " (" + size + ")" : name;
+        const existing = cart.find(item => item.name === cartKey);
+        if (existing) { existing.quantity += 1; }
+        else { cart.push({ name: cartKey, price: price, img: img, quantity: 1 }); }
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        const msg = card.querySelector(".cart-message");
+        if (msg) {
+          msg.innerText = "Added successfully ✅";
+          msg.style.color = "green";
+          setTimeout(() => { msg.innerText = ""; }, 1500);
+        }
+      });
+    });
+
+    // ================= SCROLL ANIMATIONS =================
+    const allCards = document.querySelectorAll('.menu-card, .fade-up');
+    allCards.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(40px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05 });
+    allCards.forEach(el => observer.observe(el));
+  });
+
+  // ================= SEARCH =================
+  document.getElementById('menuSearch').addEventListener('input', function () {
+    const query = this.value.toLowerCase().trim();
+    document.querySelectorAll('.menu-card').forEach(card => {
+      const name = card.querySelector('h3').innerText.toLowerCase();
+      const desc = card.querySelector('p').innerText.toLowerCase();
+      card.style.display = (name.includes(query) || desc.includes(query)) ? 'flex' : 'none';
+    });
+  });
+</script>
+
+</body>
+</html>
